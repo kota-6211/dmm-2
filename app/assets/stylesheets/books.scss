@@ -1,0 +1,203 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// index の　投稿一覧部分
+.index-header {
+  font-weight:bold;
+  font-size:30px;
+  font-family: system-ui;
+  margin-bottom:13px;
+}
+
+.index {
+
+}
+
+.index-content {
+  display:flex;
+  font-size: 13px;
+}
+
+.index-title-text1 {
+  // width: 20%;
+  margin-right:20px;
+  text-align: center;
+  font-size:15px;
+  padding-bottom:7px;
+}
+
+.index-title-text2 {
+  // width: 40%;
+  text-align: center;
+  font-size:15px;
+  padding-bottom:7px;
+}
+
+.index-link {
+  font-size:13px;
+}
+
+td {
+   padding: 1px 5px 7px 5px ;
+}
+
+// indexの新規投稿
+
+.new-books-title {
+  margin:20px 0;
+}
+
+.new-books-text {
+    font-size: 13px;
+    font-family: monospace;
+}
+
+.buttom {
+    font-size: x-small;
+    padding: 2px 8px 3px 8px;
+    background-color: white;
+    border-color: initial;
+    border-radius: 5px;
+}
+
+.text-field {
+  padding: 2px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: initial;
+}
+
+.new-body {
+  margin: 15px 0;
+}
+
+.text-area {
+  padding:2px;
+  border-style: inset;
+}
+
+// エラーメッセージ
+.errors {
+    background-color: #f0f0f0;
+    width: 453px;
+    height: 135px;
+    border: 2px #ff3333 solid;
+}
+
+
+.errors-text {
+  padding:30px;
+}
+
+.index-errors {
+    padding: 5px 0px 5px 15px;
+    background-color: #db0000;
+    color: white;
+    font-size: 12px;
+    width: 440px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.index-errors-massage {
+    display: list-item;
+    list-style-position: inside;
+    font-size: 13px;
+    margin: 7px 7px 7px 15px;
+    list-style-type: square;
+}
+
+.dumy-box {
+    text-align: center;
+    width: 33px;
+    position: absolute;
+    top: 584px;
+    left: 34px;
+    font-size: 13px;
+    font-family: monospace;
+    background-color: #ff3333;
+}
+
+.dumy-box2{
+  width: 143px;
+  height: 18px;
+  border: 3px #ff3333 solid;
+  position: absolute;
+  top: 600px;
+  left: 34px;
+}
+
+.dumy-box3 {
+    text-align: center;
+    width: 33px;
+    position: absolute;
+    top: 637px;
+    left: 34px;
+    font-size: 13px;
+    font-family: monospace;
+    background-color: #ff3333;
+}
+
+.dumy-box4 {
+    width: 160px;
+    height: 40px;
+    border: 3px #ff3333 solid;
+    position: absolute;
+    top: 655px;
+    left: 34px;
+}
+// showページ
+.show {
+  padding-left :30px;
+  font-size :13px;
+}
+
+.show-text{
+  display:flex;
+  margin-bottom:30px;
+}
+
+.show-link {
+  font-weight:300;
+  font-size: 14px;
+}
+
+.show-text p {
+  font-weight: 600;
+  margin-right :7px;
+}
+
+span {
+  margin:0 5px;
+}
+
+// editペーじ
+.edit-link {
+  font-weight:300;
+  font-size: 14px;
+}
+
+.edit-header{
+  margin-bottom: 15px;
+}
+
+.edit {
+  margin-bottom: 13px;
+}
+.edit-text {
+  margin-bottom: 13px
+}
+
+.edit-text p {
+  font-size: 14px;
+}
+
+// flashメッセージ
+
+.show-flash {
+  font-size: 14px;
+  color: #3a8926;
+  margin: 0 30px 30px 30px;
+}
+

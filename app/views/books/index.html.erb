@@ -1,0 +1,50 @@
+<div class="show-flash">
+    <%= flash[:notice] %>
+</div>
+<div class="index-header">Books</div>
+
+<table class="index">
+      <tr>
+        <th class="index-title-text1">Title</th>
+        <th class="index-title-text2">Body</th>
+      </tr>
+      
+      
+        <% @books.each do |book| %>
+      <tr class="index-link" >
+        <td class="index-title"><%= book.title %></td>
+        <td class="index-title"><%= book.body %></td>
+        <td class="index-title"><%= link_to("Show","/books/#{book.id}" ) %></td>
+        <td class="index-title"><%= link_to("Edit","/books/#{book.id}/edit" ) %></td>
+        <td class="index-title"><%= link_to("Destroy","/books/#{book.id}",method: :delete,"data-confirm" =>"are you sure?",class: "delete-button") %></td>
+      </tr>
+        <% end %>
+</table>
+        
+        
+        <% if @book.errors.any? %>
+        <div class="errors">
+          <h2 class="index-errors"><%= @book.errors.count %>errors prohibited this book from being saved:</h2>
+           <ul class="errors-text">
+            <% @book.errors.full_messages.each do |message| %>
+              <li class="index-errors-massage"><%= message %></li>
+            <% end %>
+            </ul>
+        </div>
+        <% end %>
+        
+<div class="new-books">
+      <h2 class="new-books-title">New book</h2>    
+        <%= form_with model: @book do |f| %>
+        
+      <p class="new-books-text">Title</p>
+        <%= f.text_field :title ,class:"text-field" %>
+    <div class="new-body">
+      <p class="new-books-text">Body</p>
+        <%= f.text_area :body ,class:"text-area" %>
+    </div>
+        <%= f.submit "Create Book" , class: "buttom"%>
+        <% end %>
+</div>
+        
+        
